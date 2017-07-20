@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+body { font-family: arial;
+	color:rgb(0,0,0);
+}
+.button1 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+.button2 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}.button3 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button3:hover {
+    background-color: #555555;
+    color: white;
+}.button4 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button4:hover {
+    background-color: #555555;
+    color: white;
+}
+</style>
+<br/>
+
+
+<body>
+
+	<img src="https://s-media-cache-ak0.pinimg.com/originals/77/88/be/7788beb26a421bdc16f1a4db2c2dc356.jpg" alt="Mountain View"
+	style="width:500px;height:200px;">
+
+<br/>
+
+<button class="button button1" onclick="showTower('foshayDiv')">Foshay</button>
+<br/>
+<br/>
+<button class="button button2" onclick="showTower('capellaDiv')">Capella</button>
+<br/>
+<br/>
+<button class="button button3" onclick="showTower('idsDiv')">IDS</button>
+<br/>
+<br/>
+<button class="button button4"onclick="showTower('usbankDiv')">US Bank Stadium</button>
+
+
+
+
+<div id="foshayDiv" style="display: none">
+	<p>
+	<h3>FOSHAY</h3>
+	<ul>
+	  <li>32 floors</li>
+	  <li>447 ft.</li>
+	  <li>made in 1929</li>
+	</ul>
+	</p>
+</div>
+
+<div id="capellaDiv" style="display: none">
+	<p>
+	<h3>CAPELLA</h3>
+    <ul>
+      <li>56 floors</li>
+      <li>775 ft</li>
+      <li>made in 1992</li>
+    </ul>
+	</p>
+</div>
+
+<div id="idsDiv" style="display: none">
+	<p>
+	<h3>IDS TOWER</h3>
+	<ul>
+      <li>55 floors</li>
+      <li>792 ft</li>
+      <li>made in 1973</li>
+    </ul>
+	</p>
+</div>
+
+<div id="usbankDiv" style="display: none">
+	<p>
+	<h3>US BANK STADIUM</h3>
+	<ul>
+      <li>2017 Super Bowl will be held here</li>
+      <li>used to be called the "Metrodome"</li>
+      <li>made in 2016</li>
+    </ul>
+	</p>
+</div>
+<script type="text/javascript">
+	function showTower(show){
+		document.getElementById('capellaDiv').style.display='none';
+		document.getElementById('idsDiv').style.display='none';
+		document.getElementById('usbankDiv').style.display='none';
+		document.getElementById('foshayDiv').style.display='none';
+		document.getElementById(show).style.display='block';
+	}
+	</script>
+</body>
+</html>
