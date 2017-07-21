@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+  </head>
+  <body>
+
+<p><b> Translator </b></p>
+
+  <p id="sample"></p>
+
+<script type="text/javascript">
+
+  function CapA(inString){
+    var outString="";
+
+    for (var i=0; i<inString.length; i+=1){
+      if (inString.charAt(i)=="a"){
+        outString += "uba";
+      }
+      else if (inString.charAt(i)=="e"){
+        outString += "ube";
+      }
+      else if (inString.charAt(i)=="i"){
+        outString += "ubi";
+      }
+      else if (inString.charAt(i)=="o"){
+        outString += "ubo";
+      }
+      else if (inString.charAt(i)=="u"){
+        outString += "ubu";
+      }
+      else{
+        outString += inString.charAt(i);
+      }
+    }
+    return outString;
+  }
+
+document.getElementById("sample").innerHTML = CapA("Cake");
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+
+</head>
+
+<body>
+
+<h1> Mad Libs </h1>
+
+
+<div id = "myDiv">
+  <input type="text" name="baseinput" id="myText">
+  <input type="button" value="Noun" onclick="getTextInput()">
+</div>
+
+
+<script type = "text/javascript">
+
+  function getTextInput(){
+    var input = document.getElementById("myText").value;
+    var Background1 = "One day a band named ";
+    document.getElementById("myDiv").innerHTML += "<br />" +"<br />" + Background1 + input;
+  }
+</script>
+
+
+
+  <div id = "myDiv2">
+    <input type="text" name="baseinput" id="myText2">
+    <input type="button" value="Verb" onclick="getTextInput2()">
+  </div>
+
+
+  <script type = "text/javascript">
+
+    function getTextInput2(){
+      var input = document.getElementById("myText2").value;
+      var Background2 = "woke up and ";
+      document.getElementById("myDiv2").innerHTML += "<br />" +"<br />" + Background2 + input;
+    }
+</script>
+
+
+
+<div id = "myDiv3">
+  <input type="text" name="baseinput" id="myText3">
+  <input type="button" value="Noun" onclick="getTextInput3()">
+</div>
+
+
+<script type = "text/javascript">
+
+  function getTextInput3(){
+    var input = document.getElementById("myText3").value;
+    var Background3 = "to the store in their ";
+    document.getElementById("myDiv3").innerHTML += "<br />" +"<br />" + Background3 + input + ".";
+  }
+</script>
+
+
+
+<div id = "myDiv4">
+  <input type="text" name="baseinput" id="myText3">
+  <input type="button" value="Adj" onclick="getTextInput3()">
+</div>
+
+
+<script type = "text/javascript">
+
+  function getTextInput4(){
+    var input = document.getElementById("myText4").value;
+    var Background4 = "The ....";
+    document.getElementById("myDiv4").innerHTML += "<br />" +"<br />" + Background4 + input;
+  }
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
